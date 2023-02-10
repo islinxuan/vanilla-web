@@ -1,0 +1,43 @@
+:root {
+  --font-serif: Helvetica, Arial, sans-serif;
+  --text-base: 1rem;
+  --leading-normal: 1.5;
+  --chess-bd-9: #999;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 24px;
+  font: var(--text-base) / var(--leading-normal) var(--font-seri);
+}
+
+/* || tic tac toe, and time machine */
+#App {
+  display: flex;
+}
+
+.status {
+  margin-block: 0 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 34px);
+  grid-template-rows: repeat(3, 34px);
+  border: 1px solid var(--chess-bd-9);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.square {
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid var(--chess-bd-9);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Tic Tac Toe</title>
+    <meta name="description" content="Build a tic-tac-toe game with rollback using pure JavaScript." />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/script.js"></script>
+  </head>
+  <body>
+    <div id="App">
+      <div class="tic-tac-toe">
+        <p class="status">Next one: X</p>
+        <div class="board">
+          <div class="square" data-index="0"></div>
+          <div class="square" data-index="1"></div>
+          <div class="square" data-index="2"></div>
+          <div class="square" data-index="3"></div>
+          <div class="square" data-index="4"></div>
+          <div class="square" data-index="5"></div>
+          <div class="square" data-index="6"></div>
+          <div class="square" data-index="7"></div>
+          <div class="square" data-index="8"></div>
+        </div>
+      </div>
+      <ol class="time-machine" start="0">
+        <li>
+          <button type="button" data-node="0">Go to game start</button>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
