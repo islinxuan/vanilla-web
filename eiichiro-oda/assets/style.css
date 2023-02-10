@@ -1,0 +1,88 @@
+:root {
+  --content-font: Helvetica, Arial, sans-serif;
+  --base-font-size: 1rem;
+  --title-font-size: 2rem;
+  --subtitle-font-size: 1.5rem;
+  --base-line-height: 2;
+  --title-line-height: 1.5;
+  --text-primary: #333;
+  --theme-color: red;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+  text-align: center;
+}
+
+.subtitle {
+  font-size: var(--subtitle-font-size);
+  line-height: var(--title-line-height);
+}
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  inline-size: 4px;
+  block-size: 0.65em;
+  background-color: var(--theme-color);
+  transform: translateX(-8px);
+}
+
+.nostyle-list {
+  list-style: none;
+  margin-block: 0;
+  padding-inline-start: 0;
+}
+
+.square-list {
+  list-style-type: square;
+  padding-inline-start: 24px;
+}
+.square-list li + li {
+  margin-block-start: 12px;
+}
+
+/* || the page */
+body {
+  user-select: none;
+  font: var(--base-font-size) / var(--base-line-height) var(--content-font);
+  color: var(--text-primary);
+}
+
+main {
+  max-width: 780px;
+  margin: 24px auto;
+  padding: 16px 48px 32px;
+  border: 2px solid var(--text-primary);
+  box-shadow: 4px 4px var(--text-primary);
+}
+
+/* || section 1 */
+.intro > div {
+  display: flex;
+  gap: 24px;
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-content: center;
+  gap: 8px 16px;
+}
+
+/* || section 2 */
+.appraise figure {
+  margin-inline: 24px;
+}
+
+.appraise blockquote {
+  margin: 8px 24px;
+}
+
+/* responsive design...unwanted */
