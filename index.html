@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        place-content: center;
+        block-size: 100vb;
+        margin: 0;
+      }
+
+      h1 {
+        font-family: Consolas, Monaco, monospace;
+        inline-size: 13ch;
+        border-inline-end: 1px solid transparent;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 5s steps(13), caret 1s steps(1) infinite;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+      @keyframes caret {
+        50% {
+          border-inline-end-color: currentColor;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello (again)</h1>
+  </body>
+</html>
